@@ -1,0 +1,25 @@
+header {
+  border: 1px solid black;
+  position:fixed;
+  height: 64px;
+  width: 100%;
+  vertical-align: middle;
+
+}
+
+.logo {
+  border: 1px solid black;
+  display: inline-block;
+  height: 32px;
+}
+
+header img {
+  border: 1px solid black;
+  padding: auto 24px;
+  vertical-align: middle;
+}
+
+header nav {
+  border: 1px solid black;
+  display: inline-block;
+}
