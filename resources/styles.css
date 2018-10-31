@@ -1,25 +1,38 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
 header {
   border: 1px solid black;
+  display: flex;
   position:fixed;
+  z-index: 20;
   height: 64px;
   width: 100%;
-  vertical-align: middle;
+  align-items: center;
 
 }
 
 .logo {
   border: 1px solid black;
-  display: inline-block;
-  height: 32px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 24px;
 }
 
 header img {
   border: 1px solid black;
-  padding: auto 24px;
-  vertical-align: middle;
+  height: 32px;
+  margin-right: 10px;
 }
 
 header nav {
   border: 1px solid black;
-  display: inline-block;
+  margin-right: 24px;
+}
+
+header nav span {
+   border: 1px solid black;
+   margin-left: 16px;
 }
