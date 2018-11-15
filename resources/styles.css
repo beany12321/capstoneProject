@@ -5,6 +5,18 @@ body {
 /* Nav Bar for large Screens */
 
 #navBarLarge {
+  position: fixed;
   display: flex;
+  justify-content: space-between;
   border: 2px solid black;
+}
+
+#logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#navList {
+  display: flex;
+  justify-content: flex-start;
 }
