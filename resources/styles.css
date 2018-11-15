@@ -11,7 +11,7 @@ body {
   align-items: center;
   height: 64px;
   width: 100%;
-
+  background-color: #E8E1EF;
   border: 2px solid black;
 }
 
@@ -21,7 +21,6 @@ body {
   height: 32px;
   margin-left: 24px;
   align-items: center;
-  border: 2px solid black;
 }
 
 #navList {
@@ -32,4 +31,13 @@ body {
 
 #griffin {
   height: 32px;
+}
+
+#colmarText {
+  font-weight: bold;
+}
+
+#academyText {
+  color: #9BB291;
+  font-weight: normal;
 }
