@@ -8,15 +8,28 @@ body {
   position: fixed;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+
   border: 2px solid black;
 }
 
 #logo {
   display: flex;
   justify-content: flex-start;
+  height: 32px;
+  margin-left: 24px;
+  align-items: center;
+  border: 2px solid black;
 }
 
 #navList {
   display: flex;
   justify-content: flex-start;
+  margin-right: 24px;
+}
+
+#griffin {
+  height: 32px;
 }
