@@ -63,3 +63,13 @@ body {
   transition: 0.5s;
   transition-delay: 0.1s;
 }
+
+
+/* Navbar for Smaller Screens */
+
+#navBarSmall {
+  position: relative;
+  top: 100px;
+  display: flex;
+  border: 2px black solid;
+}
