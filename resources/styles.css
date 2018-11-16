@@ -1,6 +1,7 @@
 body {
   font-family: 'Fira Sans', sans-serif;
   color: black;
+  font-size: 16px;
 }
 
 /* Nav Bar for large Screens */
@@ -49,4 +50,16 @@ body {
 
 .navLink > a {
   text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+
+.navLink > a:visited {
+  color: #9BB291;
+}
+
+.navLink > a:hover {
+  font-size: 1.2rem;
+  transition: 0.5s;
+  transition-delay: 0.1s;
 }
