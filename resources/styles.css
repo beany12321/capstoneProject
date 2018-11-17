@@ -93,7 +93,6 @@ body {
   #navBarLarge {
     display: none;
   }
-
   #navBarSmall {
     display: flex;
   }
@@ -113,7 +112,6 @@ body {
 .largeImg {
   flex-shrink: 1;
   width: 60%;
-  min-width: 550px;
   height: 100%;
   margin: 32px 24px;
 }
@@ -148,6 +146,30 @@ body {
   border: 1px black solid;
   border-radius: 10px;
 }
+
+@media only screen and (max-width: 800px) {
+  #banner {
+    flex-direction: column;
+}
+  .largeImg {
+    margin: 0;
+    width: 104%;
+    flex-shrink: 1;
+  }
+  #banner > div {
+    width: 100%;
+    padding: 32px 16px;
+  }
+  #banner > div > h2 {
+    font-size: 2rem;
+  }
+  #banner > div > h3 {
+    margin-top: 32px;
+  }
+  #banner > div > p {
+
+    width: 90%;
+  }
 /* Why Box Testing Code */
 
 .why {
