@@ -1,6 +1,7 @@
 body {
   font-family: 'Fira Sans', sans-serif;
   color: black;
+  background-color: #B4D3CE;
   font-size: 16px;
 }
 
@@ -105,11 +106,50 @@ body {
   position: relative;
   top: 66px;
   display: flex;
+  justify-content: flex-start;
   width: 100%;
 }
 
-#bannerImg {
+.largeImg {
+  flex-shrink: 1;
   width: 60%;
+  min-width: 550px;
+  height: 100%;
   margin: 32px 24px;
+}
 
+#banner > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 4;
+  width: 40%;
+}
+
+.bannerSpacing {
+  flex-shrink: 3;
+  margin: 24px 0;
+  padding: 8px 0;
+  width: 65%;
+}
+
+#banner > div > h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#banner > div > h3 {
+  font-size: 1.3rem;
+}
+
+#banner > div > p {
+  background-color: #E8E1EF;
+  text-align: center;
+  border: 1px black solid;
+  border-radius: 10px;
+}
+/* Why Box Testing Code */
+
+.why {
+  border: black 1px solid;
 }
