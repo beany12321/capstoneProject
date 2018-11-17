@@ -95,3 +95,11 @@ body {
     display: flex;
   }
 }
+
+
+/* Banner Section Styles */
+
+#banner {
+  position: relative;
+  top: 66px;
+}
