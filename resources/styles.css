@@ -103,7 +103,7 @@ html {
 
 /* Banner Section Styles */
 
-#banner {
+.largeSection {
   position: relative;
   top: 66px;
   display: flex;
@@ -118,7 +118,7 @@ html {
   margin: 32px 24px;
 }
 
-#banner > div {
+.largeSection > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,16 +133,16 @@ html {
   width: 65%;
 }
 
-#banner > div > h2 {
+.largeSection > div > h2 {
   font-size: 3rem;
   font-weight: bold;
 }
 
-#banner > div > h3 {
+.largeSection > div > h3 {
   font-size: 1.3rem;
 }
 
-#banner > div > p {
+.largeSection > div > p {
   background-color: #E8E1EF;
   text-align: center;
   border: 1px black solid;
@@ -150,7 +150,7 @@ html {
 }
 
 @media only screen and (max-width: 800px) {
-  #banner {
+  .largeSection {
     flex-direction: column;
     padding: 0;
     margin: 0;
@@ -165,18 +165,18 @@ html {
     margin: 32px 16px;
     width: auto;
   }
-  #banner > div {
+  .largeSection > div {
     width: 100%;
     padding: 0;
   }
-  #banner > div > h2 {
+  .largeSection > div > h2 {
     font-size: 2rem;
     margin-bottom: 0;
   }
-  #banner > div > h3 {
+  .largeSection > div > h3 {
     margin-bottom: 0;
   }
-  #banner > div > p {
+  .largeSection > div > p {
     margin-top: 24px;
   }
 /* Why Box Testing Code */
