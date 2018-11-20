@@ -7,6 +7,11 @@ html {
   width: 100%;
 }
 
+article {
+  width: 100%;
+  height: auto;
+
+}
 /* Nav Bar for large Screens */
 
 #navBarLarge {
@@ -116,6 +121,7 @@ html {
   width: 60%;
   height: 100%;
   margin: 32px 24px;
+  border: red 2px solid;
 }
 
 .largeSection > div {
@@ -179,8 +185,27 @@ html {
   .largeSection > div > p {
     margin-top: 24px;
   }
+}
+
+
+/* Info Section */
+#info {
+
+}
+
+#infoLeft {
+  width: auto;
+  border: red 2px solid;
+}
+
+#infoImg {
+  width: 60%;
+  height: auto;;
+}
+
+
 /* Why Box Testing Code */
 
 .why {
-  border: black 1px solid;
+  border: red 2px solid;
 }
