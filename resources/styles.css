@@ -1,8 +1,10 @@
-body {
+
+html {
   font-family: 'Fira Sans', sans-serif;
   color: black;
   background-color: #B4D3CE;
   font-size: 16px;
+  width: 100%;
 }
 
 /* Nav Bar for large Screens */
@@ -150,25 +152,32 @@ body {
 @media only screen and (max-width: 800px) {
   #banner {
     flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
   .largeImg {
+    display: flex;
     margin: 0;
-    width: 104%;
-    flex-shrink: 1;
+    align-items: center;
+    width: 100%;
+  }
+  .bannerSpacing {
+    margin: 32px 16px;
+    width: auto;
   }
   #banner > div {
     width: 100%;
-    padding: 32px 16px;
+    padding: 0;
   }
   #banner > div > h2 {
     font-size: 2rem;
+    margin-bottom: 0;
   }
   #banner > div > h3 {
-    margin-top: 32px;
+    margin-bottom: 0;
   }
   #banner > div > p {
-
-    width: 90%;
+    margin-top: 24px;
   }
 /* Why Box Testing Code */
 
