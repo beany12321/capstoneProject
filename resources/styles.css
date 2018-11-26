@@ -2,7 +2,7 @@
 html {
   font-family: 'Fira Sans', sans-serif;
   color: black;
-  background-color: #B4D3CE;
+  background-color: honeydew;
   font-size: 16px;
   width: 100%;
 }
@@ -184,6 +184,9 @@ article {
   .largeSection > div > p {
     margin-top: 24px;
   }
+  #infoLeft {
+    display: none;
+  }
 }
 
 
@@ -194,18 +197,32 @@ article {
 
 #infoLeft {
   width: 60%;
-  padding: 0 24px;
+  padding: 32px 24px;
 }
 
 #infoImg {
   margin: 0;
   width: 100%;
+  margin-bottom: 32px;
+  margin-top: 32px;
 }
 
-#infoLeft > article {
-  display: flex;
-  flex-direction: column;
+#infoH3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
 }
+
+.practiceText {
+  margin-bottom: 32px;
+}
+
+#author {
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+
 
 
 /* Why Box Testing Code */
