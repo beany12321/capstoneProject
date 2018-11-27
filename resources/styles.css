@@ -183,6 +183,7 @@ article {
   }
   .largeSection > div > p {
     margin-top: 24px;
+    width: 93%;
   }
   #infoLeft {
     display: none;
@@ -302,6 +303,41 @@ article {
 
 #infoSmall {
   display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  #infoSmall {
+    position: relative;
+    top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 5;
+  }
+  .smallInfoBox {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+  .flexInfo {
+    display:flex;
+    width: 95%;
+    height: auto;
+    flex-shrink: 6;
+  }
+  .smallInfoBox > h4, p {
+    align-self: flex-start;
+    padding-left: 32px;
+  }
+  .smallInfoBox > h4 {
+    margin-top: 16px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
 }
 
 
