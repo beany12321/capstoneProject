@@ -187,7 +187,7 @@ article {
   #infoLeft {
     display: none;
   }
-  #infoBlock1 {
+  #container {
     display: none;
   }
 }
@@ -200,9 +200,8 @@ article {
 
 #infoLeft {
   width: 60%;
-  padding: 32px 24px;
-  padding-top: 0;
-  padding-right: 0;
+  padding-left: 24px;
+
 }
 
 #infoImg {
@@ -261,6 +260,14 @@ article {
   width: auto;
 }
 
+#infoBlock3 {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  padding-bottom: 16px;
+  width: auto;
+}
+
 .switch {
   display: flex;
   justify-content: center;
@@ -291,6 +298,10 @@ article {
 
 #container {
   justify-content: flex-start;
+}
+
+#infoSmall {
+  display: none;
 }
 
 
