@@ -12,6 +12,17 @@ article {
   height: auto;
 
 }
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+img {
+  border-radius: 3%;
+  box-shadow: 5px 5px 2px dimgrey;
+}
 /* Nav Bar for large Screens */
 
 #navBarLarge {
@@ -42,6 +53,7 @@ article {
 
 #griffin {
   height: 32px;
+  box-shadow: none;
 }
 
 #colmarText {
@@ -343,29 +355,58 @@ article {
 /* Learning Section */
 
 #learning {
+  background-image: linear-gradient(#f0fff0, #E8E2CE);
   position: relative;
   top: 70px;
   display: flex;
   flex-direction: column;
   align-items: : stretch;
   padding: 32px 72px;
-  border: purple 2px solid;
 }
 
 #learning > h3 {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  padding-bottom: 32px;
+  padding-bottom: 16px;
 }
 
 #learningInfo {
   display: flex;
-  flex-wrap: wrap;  
-  border: red 2px solid;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.learningBox {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 16px 0;
 }
 
 
+.learningBox > img {
+  height: auto;
+  align-self: stretch;
+  width: 100%;
+}
+
+.learningText {
+  padding: 0 16px;
+}
+
+.learningSubject {
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+.learningCourses {
+    padding-bottom: 8px;
+}
+
+.learningBreakdown {
+
+}
 /* Why Box Testing Code */
 
 .why {
