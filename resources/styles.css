@@ -212,7 +212,7 @@ width: 100%;
     width: auto;
   }
   .largeSection > div {
-  display:flex;
+  display: block;
   flex-direction: column;
   height: 100%;
     width: 100%;
