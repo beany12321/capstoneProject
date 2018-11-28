@@ -21,15 +21,27 @@ h4 {
 
 img {
   border-radius: 3%;
-  box-shadow: 5px 5px 2px dimgrey;
+  -webkit-box-shadow: 5px 5px 2px dimgrey;
+          box-shadow: 5px 5px 2px dimgrey;
+}
+
+.navBarImg{
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /* Nav Bar for large Screens */
 
 #navBarLarge {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 64px;
   width: 100%;
   z-index: 99;
@@ -38,22 +50,33 @@ img {
 }
 
 #logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: 32px;
   margin-left: 24px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #navList {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-right: 24px;
 }
 
 #griffin {
   height: 32px;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #colmarText {
@@ -72,6 +95,8 @@ img {
 .navLink > a {
   text-decoration: none;
   color: black;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -81,8 +106,12 @@ img {
 
 .navLink > a:hover {
   font-size: 1.2rem;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
-  transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
 
@@ -90,7 +119,9 @@ img {
 
 #navBarSmall {
   position: fixed;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 64px;
   z-index: 99;
@@ -100,8 +131,12 @@ img {
 }
 
 #navBarSmall > nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 32px;
   width: 100%;
   margin: 0 24px;
@@ -113,6 +148,8 @@ img {
     display: none;
   }
   #navBarSmall {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -123,28 +160,42 @@ img {
 .largeSection {
   position: relative;
   top: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
 }
 
 .largeImg {
-  flex-shrink: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   width: 60%;
   height: 100%;
   margin: 32px 24px;
 }
 
 .largeSection > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 4;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 4;
+      flex-shrink: 4;
   width: 40%;
 }
 
 .bannerSpacing {
-  flex-shrink: 3;
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
   margin: 24px 0;
   padding: 8px 0;
   width: 65%;
@@ -168,14 +219,21 @@ img {
 
 @media only screen and (max-width: 800px) {
   .largeSection {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0;
     margin: 0;
 }
   .largeImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
   }
   .bannerSpacing {
@@ -242,13 +300,21 @@ img {
 #infoSquares {
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .infoRight {
   padding: 16px;
-  flex-direction: row !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
 }
 
 .infoRight > img {
@@ -258,33 +324,49 @@ img {
 }
 
 #infoBlock1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 0;
   padding-bottom: 16px;
   width: auto;
 }
 
 #infoBlock2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 0;
   padding-bottom: 16px;
   width: auto;
 }
 
 #infoBlock3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 0;
   padding-bottom: 16px;
   width: auto;
 }
 
 .switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .blockH4 {
@@ -296,13 +378,19 @@ img {
 .readMore {
   text-decoration: none;
   color: #6B7BEF;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
 }
 
 .readMore:hover {
   font-size: 1.2rem;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
-  transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
 .readMore:visited {
@@ -310,7 +398,9 @@ img {
 }
 
 #container {
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 #infoSmall {
@@ -322,26 +412,45 @@ img {
     position: relative;
     top: 70px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-shrink: 5;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-negative: 5;
+        flex-shrink: 5;
   }
   .smallInfoBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: inherit;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 64px;
   }
   .flexInfo {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     width: 95%;
     height: auto;
-    flex-shrink: 6;
+    -ms-flex-negative: 6;
+        flex-shrink: 6;
   }
   .smallInfoBox > h4, p {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     padding-left: 32px;
   }
   .smallInfoBox > h4 {
@@ -355,12 +464,22 @@ img {
 /* Learning Section */
 
 #learning {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0fff0), to(#E8E2CE));
+  background-image: -webkit-linear-gradient(#f0fff0, #E8E2CE);
+  background-image: -o-linear-gradient(#f0fff0, #E8E2CE);
   background-image: linear-gradient(#f0fff0, #E8E2CE);
   position: relative;
   top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: : stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   padding: 32px 72px;
 }
 
@@ -372,14 +491,23 @@ img {
 }
 
 #learningInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .learningBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 30%;
   padding: 16px 0;
 }
@@ -387,7 +515,9 @@ img {
 
 .learningBox > img {
   height: auto;
-  align-self: stretch;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
   width: 100%;
 }
 
@@ -406,6 +536,36 @@ img {
 
 .learningBreakdown {
 
+}
+
+@media only screen and (max-width: 750px) {
+  #learning {
+    padding: 32px 0;
+  }
+  #learningInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .learningBox {
+    width: 100%
+  }
+  .learningBox > img, .learningCourses, .learningBreakdown  {
+    display: none;
+  }
+  .learningSubject {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+    background-color: #898C90;
+  }
 }
 /* Why Box Testing Code */
 
