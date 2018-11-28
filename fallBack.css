@@ -126,50 +126,33 @@ img {
 
 .largeSection {
   position: relative;
-top: 66px;
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
--webkit-box-pack: start;
--ms-flex-pack: start;
-        justify-content: flex-start;
-width: 100%;
+  top: 66px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .largeImg {
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
+  flex-shrink: 1;
   width: 60%;
   height: 100%;
   margin: 32px 24px;
 }
 
 .largeSection > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-negative: 4;
-      flex-shrink: 4;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 4;
   width: 40%;
 }
 
 .bannerSpacing {
-  display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    display: flex;
-    -ms-flex-negative: 3;
-        flex-shrink: 3;
-    margin: 24px 0;
-    padding: 8px 0;
-    width: 65%;
+  display: block;
+  flex-shrink: 3;
+  margin: 24px 0;
+  padding: 8px 0;
+  width: 65%;
 }
 
 .largeSection > div > h2 {
@@ -190,31 +173,25 @@ width: 100%;
 
 @media only screen and (max-width: 800px) {
   .largeSection {
-   -webkit-box-orient: vertical;
-   -webkit-box-direction: normal;
-   -ms-flex-direction: column;
-   flex-direction: column;
-   padding: 0;
-   margin: 0;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
   .largeImg {
     display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 100%;
+   display: -ms-flexbox;
+   display: flex;
+   margin: 0;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   width: 100%;
   }
   .bannerSpacing {
     margin: 32px 16px;
     width: auto;
   }
   .largeSection > div {
-  display:flex;
-  flex-direction: column;
-  height: 100%;
     width: 100%;
     padding: 0;
   }
