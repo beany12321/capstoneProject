@@ -340,6 +340,30 @@ article {
   }
 }
 
+/* Learning Section */
+
+#learning {
+  position: relative;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: : stretch;
+  padding: 32px 72px;
+  border: purple 2px solid;
+}
+
+#learning > h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 32px;
+}
+
+#learningInfo {
+  display: flex;
+  flex-wrap: wrap;  
+  border: red 2px solid;
+}
 
 
 /* Why Box Testing Code */
