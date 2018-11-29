@@ -463,6 +463,26 @@ width: 100%;
     background-color: #898C90;
   }
 }
+
+/* Thesis Code */
+
+#thesis {
+  background-color:  #E8E2CE;
+  position:relative;
+  top: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+#thesis > h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: inherit;
+  align-items: stretch;
+  justify-content: center;
+  padding: 32px 0;
+}
+
 /* Why Box Testing Code */
 
 .why {
