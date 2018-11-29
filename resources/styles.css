@@ -186,6 +186,7 @@ width: 100%;
   text-align: center;
   border: 1px black solid;
   border-radius: 10px;
+  display: block;
 }
 
 @media only screen and (max-width: 800px) {
