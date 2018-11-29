@@ -568,9 +568,7 @@ footer{
   top: 65px;
 }
 
-.copyright,
-.terms,
-.icons{
+.copyright {
   padding: 16.001px 23.994px;
   padding: 0.889rem 1.333rem;
 }
@@ -580,22 +578,7 @@ footer a{
   text-decoration: none;
   padding-left: 16.001px;
   padding-left: 0.889rem;
-  font-size: 1.25vw;
-}
-
-.icons{
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-}
-
-.icons i{
-  padding-left: 16.001px;
-  padding-left: 0.889rem;
-}
-
-footer .tablet{
-  display: none;
+  font-size: 1.25rem;
 }
 
 @media only screen and (max-width: 1024px){
@@ -604,33 +587,20 @@ footer .tablet{
   }
 }
 
-@media only screen and (max-width: 768px){
-  footer .tablet{
-    display: block;
-  }
 
-  footer .desktop{
-    display: none;
-  }
-}
 
 @media only screen and (max-width: 1920px){
   footer p{
     font-size: 1.25vw;
   }
 }
-@media only screen and (max-width: 580px){
-  footer .icons,
-  footer .terms{
-    display: none;
-  }
 
   footer p{
     font-size: 2.72vw;
   }
 
   footer{
-    height: 2.667rem;
+    height: 4.667rem;
   }
 }
 /* Why Box Testing Code */
