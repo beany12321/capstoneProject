@@ -511,6 +511,128 @@ width: 100%;
   padding-bottom: 32px;
   word-spacing: 1.1rem;
 }
+
+#thesisInfo {
+  display: inherit;
+  flex-direction: column;
+  width: 40%;
+}
+
+#thesisBlock1 {
+  display: inherit;
+}
+
+#thesisBlock2 {
+  display: inherit;
+}
+
+#thesisImg1, #thesisImg2 {
+  padding-right: 0;
+}
+
+.text-move {
+  padding-left: 24px;
+}
+
+@media only screen and (max-width: 800px) {
+  #thesisWhole {
+    width: 100%
+  }
+  #videoDiv {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  #videoDivH4, #videoDivP, #thesisInfo, #thesisBlock1, #thesisBlock2 {
+    display: none;
+  }
+}
+
+/* Footer  */
+footer{
+  background-color: rgb(56, 72, 87);
+  color: rgb(255, 255, 255);
+  border-top: 0.45px solid rgba(9, 6, 0, 0.7);
+  border-top: 0.025rem solid rgba(9, 6, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 95.399px;
+  height: 5.3rem;
+  position: relative;
+  top: 65px;
+}
+
+.copyright,
+.terms,
+.icons{
+  padding: 16.001px 23.994px;
+  padding: 0.889rem 1.333rem;
+}
+
+footer a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding-left: 16.001px;
+  padding-left: 0.889rem;
+  font-size: 1.25vw;
+}
+
+.icons{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+}
+
+.icons i{
+  padding-left: 16.001px;
+  padding-left: 0.889rem;
+}
+
+footer .tablet{
+  display: none;
+}
+
+@media only screen and (max-width: 1024px){
+  footer p{
+    font-size: 1.4vw;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  footer .tablet{
+    display: block;
+  }
+
+  footer .desktop{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1920px){
+  footer p{
+    font-size: 1.25vw;
+  }
+}
+@media only screen and (max-width: 580px){
+  footer .icons,
+  footer .terms{
+    display: none;
+  }
+
+  footer p{
+    font-size: 2.72vw;
+  }
+
+  footer{
+    height: 2.667rem;
+  }
+}
 /* Why Box Testing Code */
 
 .why {
