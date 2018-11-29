@@ -15,7 +15,7 @@ article {
 
 h4 {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: bolder;
   line-height: 40px;
 }
 
@@ -475,14 +475,42 @@ width: 100%;
 }
 
 #thesis > h3 {
-  font-size: 1.6rem;
-  font-weight: bold;
+  font-size: 2.1rem;
+  font-weight: bolder;
   display: inherit;
   align-items: stretch;
   justify-content: center;
   padding: 32px 0;
 }
 
+#thesisWhole {
+  display: inherit;
+}
+
+#videoDiv {
+  display: inherit;
+  flex-direction: column;
+  width: 60%;
+  padding: 0 24px;
+}
+
+#videoDiv > video {
+  display: inherit;
+  flex-direction: row;
+  justify-content: stretch;
+  width: 100%;
+  height: auto;
+}
+
+#videoDivH4 {
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+
+#videoDivP {
+  padding-bottom: 32px;
+  word-spacing: 1.1rem;
+}
 /* Why Box Testing Code */
 
 .why {
